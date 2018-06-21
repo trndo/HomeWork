@@ -1,0 +1,19 @@
+{
+    "name": "vel-vet/poject",
+    "type": "project",
+    "authors": [
+        {
+            "name": "trndo",
+            "email": "vetal1199@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/yaml": "^4.1"
+    },
+    "autoload": {
+        "psr-4":{
+            "prj\\":""
+        }
+    }
+}
