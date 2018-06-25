@@ -38,7 +38,7 @@ class JsonKeyValueStorage implements KeyValueStorageInterface
         return $arr[$key];
     }
 
-    public function has(string $key)
+    public function has(string $key):bool
     {
         $arr=$this->getData();
         return isset($arr[$key]);
