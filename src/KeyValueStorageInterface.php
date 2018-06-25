@@ -30,7 +30,7 @@ interface KeyValueStorageInterface
     /**
      * Check whether value is exist by key.
      */
-    public function has(string $key);
+    public function has(string $key):bool;
 
     /**
      * Removes value by key.
