@@ -6,10 +6,10 @@
  * Time: 14:05
  */
 
-namespace prj\src;
+namespace app\src;
 
 
-interface KeyValueStorage
+interface KeyValueStorageInterface
 {
 
     /**
@@ -18,31 +18,31 @@ interface KeyValueStorage
      * @param string $key
      * @param mixed  $value
      */
-    public function set($key, $value);
+    public function set(string $key, $value):void;
 
     /**
      * Gets value by key.
      *
      * @param string $key
      */
-    public function get($key);
+    public function get(string $key);
 
     /**
      * Check whether value is exist by key.
      */
-    public function has($key);
+    public function has(string $key);
 
     /**
      * Removes value by key.
      *
      * @param string $key
      */
-    public function remove($key);
+    public function remove(string $key):void ;
 
     /**
      * Clear storage.
      *
      * @param string $key
      */
-    public function clear($key);
+    public function clear():void;
 }
